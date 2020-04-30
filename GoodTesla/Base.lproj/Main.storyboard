@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8zS-Sp-mfd"/>
-                                    <constraint firstAttribute="width" constant="80" id="yD6-Cg-j8c"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="yD6-Cg-j8c"/>
                                 </constraints>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,6 +43,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uav-AA-PXl" secondAttribute="bottom" id="53s-JO-D0o"/>
                             <constraint firstItem="uav-AA-PXl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G9E-eY-6wd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uav-AA-PXl" secondAttribute="trailing" id="NCw-3x-eDJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0T9-UK-1lE" secondAttribute="trailing" constant="10" id="TJm-b9-p2O"/>
                             <constraint firstItem="0T9-UK-1lE" firstAttribute="bottom" secondItem="uav-AA-PXl" secondAttribute="bottom" constant="-10" id="aKY-De-rGL"/>
                             <constraint firstItem="uav-AA-PXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iqk-mE-7BO"/>
                             <constraint firstItem="0T9-UK-1lE" firstAttribute="leading" secondItem="uav-AA-PXl" secondAttribute="leading" constant="10" id="mQX-fu-zqf"/>
