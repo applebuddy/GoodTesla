@@ -10,12 +10,25 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
+    @IBOutlet var webView: WKWebView!
+    @IBOutlet var backButton: UIButton!
 
-    @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+    }
+
+    private func configureView() {
         guard let url = URL(string: "http://giwan.co.kr/gdmotors") else { return }
-        self.webView.load(URLRequest(url: url))
+        webView.load(URLRequest(url: url))
+        backButton.layer.borderWidth = 1
+    }
+
+    private func configureBackButton() {
+        backButton.layer.borderWidth = 1
+    }
+
+    @IBAction func backButtonPressed(_: UIButton) {
+        webView.goBack()
     }
 }
-

@@ -23,23 +23,40 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T9-UK-1lE">
+                                <rect key="frame" x="10" y="802" width="80" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8zS-Sp-mfd"/>
+                                    <constraint firstAttribute="width" constant="80" id="yD6-Cg-j8c"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="js6-CS-KBX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uav-AA-PXl" secondAttribute="bottom" id="53s-JO-D0o"/>
                             <constraint firstItem="uav-AA-PXl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G9E-eY-6wd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uav-AA-PXl" secondAttribute="trailing" id="NCw-3x-eDJ"/>
+                            <constraint firstItem="0T9-UK-1lE" firstAttribute="bottom" secondItem="uav-AA-PXl" secondAttribute="bottom" constant="-10" id="aKY-De-rGL"/>
                             <constraint firstItem="uav-AA-PXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iqk-mE-7BO"/>
+                            <constraint firstItem="0T9-UK-1lE" firstAttribute="leading" secondItem="uav-AA-PXl" secondAttribute="leading" constant="10" id="mQX-fu-zqf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="0T9-UK-1lE" id="qYc-Cm-hrk"/>
                         <outlet property="webView" destination="uav-AA-PXl" id="GII-li-WzN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
