@@ -16,15 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        configureBackButton()
     }
 
     private func configureView() {
-        guard let url = URL(string: "http://giwan.co.kr/gdmotors") else { return }
+        guard let url = URL(string: URLString.main) else { return }
         webView.load(URLRequest(url: url))
         backButton.layer.borderWidth = 1
     }
 
     private func configureBackButton() {
+        backButton.backgroundColor = UIColor(white: 1.0, alpha: 0.7)
+        backButton.layer.cornerRadius = 5
         backButton.layer.borderWidth = 1
     }
 

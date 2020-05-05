@@ -14,6 +14,7 @@
 		071055D7245AE476008BA8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071055D6245AE476008BA8E2 /* Assets.xcassets */; };
 		071055DA245AE476008BA8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071055D8245AE476008BA8E2 /* LaunchScreen.storyboard */; };
 		071055E3245AE4BD008BA8E2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071055E2245AE4BD008BA8E2 /* WebKit.framework */; };
+		077DAC2D2461516A006F1B54 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC2C2461516A006F1B54 /* URLString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		071055D9245AE476008BA8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		071055DB245AE476008BA8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		071055E2245AE4BD008BA8E2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		077DAC2C2461516A006F1B54 /* URLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				071055CD245AE474008BA8E2 /* AppDelegate.swift */,
 				071055CF245AE474008BA8E2 /* SceneDelegate.swift */,
+				077DAC2C2461516A006F1B54 /* URLString.swift */,
 				071055D1245AE474008BA8E2 /* ViewController.swift */,
 				071055D3245AE474008BA8E2 /* Main.storyboard */,
 				071055D6245AE476008BA8E2 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				071055D2245AE474008BA8E2 /* ViewController.swift in Sources */,
+				077DAC2D2461516A006F1B54 /* URLString.swift in Sources */,
 				071055CE245AE474008BA8E2 /* AppDelegate.swift in Sources */,
 				071055D0245AE474008BA8E2 /* SceneDelegate.swift in Sources */,
 			);
@@ -228,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
