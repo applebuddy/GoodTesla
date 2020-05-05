@@ -10,28 +10,14 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
-    @IBOutlet var webView: WKWebView!
-    @IBOutlet var backButton: UIButton!
+    private let mainView = MainView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
-        configureBackButton()
+        mainView.configureBackButton(self)
     }
 
-    private func configureView() {
-        guard let url = URL(string: URLString.main) else { return }
-        webView.load(URLRequest(url: url))
-        backButton.layer.borderWidth = 1
-    }
-
-    private func configureBackButton() {
-        backButton.backgroundColor = UIColor(white: 1.0, alpha: 0.7)
-        backButton.layer.cornerRadius = 5
-        backButton.layer.borderWidth = 1
-    }
-
-    @IBAction func backButtonPressed(_: UIButton) {
-        webView.goBack()
+    override func loadView() {
+        view = mainView
     }
 }
