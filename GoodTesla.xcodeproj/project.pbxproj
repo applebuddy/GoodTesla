@@ -16,6 +16,7 @@
 		071055E3245AE4BD008BA8E2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071055E2245AE4BD008BA8E2 /* WebKit.framework */; };
 		077DAC2D2461516A006F1B54 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC2C2461516A006F1B54 /* URLString.swift */; };
 		077DAC2F246152A2006F1B54 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC2E246152A2006F1B54 /* MainView.swift */; };
+		07A91AD524643EBF00C5A7BF /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A91AD424643EBF00C5A7BF /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		071055E2245AE4BD008BA8E2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		077DAC2C2461516A006F1B54 /* URLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 		077DAC2E246152A2006F1B54 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		07A91AD424643EBF00C5A7BF /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				071055CD245AE474008BA8E2 /* AppDelegate.swift */,
 				071055CF245AE474008BA8E2 /* SceneDelegate.swift */,
 				077DAC2C2461516A006F1B54 /* URLString.swift */,
+				07A91AD424643EBF00C5A7BF /* UIViewController+.swift */,
 				071055D1245AE474008BA8E2 /* ViewController.swift */,
 				077DAC2E246152A2006F1B54 /* MainView.swift */,
 				071055D3245AE474008BA8E2 /* Main.storyboard */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A91AD524643EBF00C5A7BF /* UIViewController+.swift in Sources */,
 				071055D2245AE474008BA8E2 /* ViewController.swift in Sources */,
 				077DAC2D2461516A006F1B54 /* URLString.swift in Sources */,
 				071055CE245AE474008BA8E2 /* AppDelegate.swift in Sources */,

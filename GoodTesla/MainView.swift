@@ -11,7 +11,7 @@ import WebKit
 
 class MainView: UIView {
     let webView = WKWebView()
-    private let backButton = UIButton()
+    let backButton = UIButton()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,15 +27,6 @@ class MainView: UIView {
         addSubviews()
         makeConstraint()
         configureWebView()
-    }
-
-    func configureBackButton(_: UIViewController) {
-        backButton.backgroundColor = UIColor(white: 1.0, alpha: 0.7)
-        backButton.layer.cornerRadius = 5
-        backButton.layer.borderWidth = 1
-        backButton.setTitle("Exit", for: .normal)
-        backButton.setTitleColor(UIColor.black, for: .normal)
-        backButton.addTarget(self, action: #selector(backButtonPressed(_:)), for: .touchUpInside)
     }
 
     private func configureWebView() {
@@ -64,13 +55,5 @@ class MainView: UIView {
             self.backButton.widthAnchor.constraint(greaterThanOrEqualToConstant: 80),
             self.backButton.heightAnchor.constraint(equalToConstant: 50),
         ])
-    }
-
-    private func goBack() {
-        webView.goBack()
-    }
-
-    @objc func backButtonPressed(_: UIButton) {
-        goBack()
     }
 }
