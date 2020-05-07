@@ -15,9 +15,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.configureBackButton(self)
+        mainView.webView.navigationDelegate = self
     }
 
     override func loadView() {
         view = mainView
+    }
+}
+
+extension ViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didCommit _: WKNavigation!) {
+        print("webDidCommit!")
+        print(webView.canGoBack ? "CanGoBack" : "CanNotGoBack")
     }
 }

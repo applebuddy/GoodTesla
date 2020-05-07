@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 class MainView: UIView {
-    private let webView = WKWebView()
+    let webView = WKWebView()
     private let backButton = UIButton()
 
     override init(frame: CGRect) {
@@ -33,7 +33,7 @@ class MainView: UIView {
         backButton.backgroundColor = UIColor(white: 1.0, alpha: 0.7)
         backButton.layer.cornerRadius = 5
         backButton.layer.borderWidth = 1
-        backButton.setTitle("Back", for: .normal)
+        backButton.setTitle("Exit", for: .normal)
         backButton.setTitleColor(UIColor.black, for: .normal)
         backButton.addTarget(self, action: #selector(backButtonPressed(_:)), for: .touchUpInside)
     }

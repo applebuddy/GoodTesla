@@ -9,5 +9,5 @@
 import Foundation
 
 struct URLString {
-    static let main = "http://giwan.co.kr/gdmotors"
+    static let main = "http://goodmotors.kr"
 }
